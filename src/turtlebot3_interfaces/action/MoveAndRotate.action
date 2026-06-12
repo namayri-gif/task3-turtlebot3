@@ -1,0 +1,9 @@
+float32 distance
+float32 angle
+float32 timeout
+---
+bool success
+string message
+---
+string current_state
+float32 progress
