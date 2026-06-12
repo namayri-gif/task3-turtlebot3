@@ -44,6 +44,6 @@ class MoveNRotateClient(Node):
 def main():
     rclpy.init()
     client = MoveNRotateClient()
-    client.send_goal(2.0, 90.0, 10.0)  # Send a goal with 2m distance, 90 degrees angle, and 10s timeout
+    client.send_goal(2.0, 180.0, 10.0)  # Send a goal with 2m distance, 90 degrees angle, and 10s timeout
     rclpy.spin(client)
     rclpy.shutdown()
