@@ -60,7 +60,7 @@ class MoveNRotate(Node):
                 break
 
             msg = Twist()
-            msg.linear.x = 2 
+            msg.linear.x = 2.0 
             self.publisher_.publish(msg)
 
             feedback_msg.current_state = "Moving"
@@ -75,7 +75,7 @@ class MoveNRotate(Node):
         # ── PHASE 2: ROTATE ──────────────────────────────────────────────────
 
         angle_rad = math.radians(angle)
-        angular_speed = 2         
+        angular_speed = 2.0         
         rotate_duration = angle_rad / angular_speed  
 
         self.get_logger().info('Phase 2: Rotating...')
